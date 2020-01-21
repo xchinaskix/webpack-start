@@ -1,0 +1,8 @@
+{
+    "presets": ["env"],
+    "plugins": ["transform-runtime", "dynamic-import-webpack"],
+    "ignore": [
+        "**/*.test.js",
+        "/node_modules"
+      ]
+}

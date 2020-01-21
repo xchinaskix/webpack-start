@@ -1,0 +1,14 @@
+@import 'vars';
+
+img {
+    max-height: 20em;
+    width: auto;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    // some comment
+}

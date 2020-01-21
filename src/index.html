@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+   <title>Ближайший магазин чая из гибискуса</title>
+ </head>
+ <body>
+   <img src="assets/images/prod.jpg">
+   <p>Nearest store is <span id="nearest-store"></span></p>
+   <p>Current location is <span id="location"></span></p>
+   <!-- <script src="app/src/distance.js"></script> -->
+   <!-- <script src="app/src/page.js"></script> -->
+   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+ </body>
+</html>

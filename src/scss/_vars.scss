@@ -1,0 +1,57 @@
+/*Any manipulation with constants in a whole project
+can be done with a Ctrl+Shift+R (Win, macOS) combination
+in JetBrains redactors*/
+
+//COLOURS CONST
+$YELLOW: #dded00; /* primary yellow */
+$BLUE: #02a3e1; /* primary blue */
+$BLUE-LIGHT: #6DBDFA; /* blue button hover mode */
+$RED: #ff3439; /* primary red */
+$RED-LIGHT: #ff442c; /*header menu*/
+$GREEN: #25A836; /* primary green */
+$GREEN-LIGHT: #3AD74F; /*green button hover mode*/
+$primary: #0a0332; /* primary fonts and icons colour */
+$GRAY-LIGHT: #ababab; /* countdowns etc.. */
+$GRAY-LIGHTER: #c2c2c2; /* borders etc.. */
+$purple: #b03caf; /* ribbon, free lines */
+$VIOLET: #5e47f2;
+
+//FONTS CONST
+$headline: 'Poppins', 'Roboto', sans-serif;
+$CONTENT: 'Poppins', 'Roboto', sans-serif;
+
+//FONT SIZES CONST
+$LARGE: 20px;
+$MEDIUM: 18px;
+$UIBASIC: 16px;
+$BASIC: 14px;
+$XBASIC: 13px;
+$small: 12px;
+
+//MIXINS
+@mixin primary-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.61;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  display: inline-block;
+  //border-bottom: 2px solid $primary;
+
+  @media screen and (max-width: 768px) {
+    font-size: $MEDIUM;
+  }
+}
+
+@mixin primary-shadows {
+  border-radius: 10px;
+  box-shadow: 0 5px 28.1px 0.9px rgba(0, 0, 0, 0.14);
+  background-color: #ffffff;
+}
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
